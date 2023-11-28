@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo Translation</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #loading-container{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #loading-container img{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>ECHO Translate</h1>
+  <div id="loading-container">
+    <img src="images/loading.gif" alt="">
+  </div>
+  <p id="selected-container" style="display: none;"></p>
+  <p id="test-container"></p>
+  <script src="/scripts/MD5.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
